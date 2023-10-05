@@ -25,8 +25,8 @@
   </p>
   <p>
     <strong>Images:</strong>
-    <%= post.images each do |image| %>
+    <%= post.images.each do |image| %>
       <div><%=link_to image.filename, image%></div>
-    <%=end%>
+    <%end%>
   </p>
 </div>
