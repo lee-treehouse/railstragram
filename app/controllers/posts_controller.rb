@@ -7,7 +7,7 @@ class PostsController < ApplicationController
   end
 
   # GET /posts/1 or /posts/1.json
-  def show
+  def show 
   end
 
   # GET /posts/new
@@ -65,6 +65,7 @@ class PostsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def post_params
-      params.require(:post).permit(:caption, :longitude, :latitude, :user_id, :allow_comments, :show_likes_count)
+      # in the example we :images: [] but rubocop does not like that.. seeing if :images => [] will do the trick
+      params.require(:post).permit(:caption, :longitude, :latitude, :user_id, :allow_comments, :show_likes_count, :images => [])
     end
 end
