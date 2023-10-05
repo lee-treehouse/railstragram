@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  caption: MyString
+  longitude: 1.5
+  latitude: MyString
+  float: MyString
+  user: one
+  allow_comments: false
+  show_likes_count: MyString
+  boolean: MyString
+
+two:
+  caption: MyString
+  longitude: 1.5
+  latitude: MyString
+  float: MyString
+  user: two
+  allow_comments: false
+  show_likes_count: MyString
+  boolean: MyString
