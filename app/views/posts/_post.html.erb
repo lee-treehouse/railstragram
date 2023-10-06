@@ -46,7 +46,11 @@
       <%end%>
     </div>
           </div>
+          <p class="card-text">
+            <span class="fw-bold"><%=post.user.username%></span>
+            <%=post.caption%>
+          </p>
+          <small><%=time_ago_in_words(post.created_at)%></small>
         </div>
-        <h5 class="card-title"><%=post.caption%></h5>
         <div class="card-footer">footer</div>
       </div>
