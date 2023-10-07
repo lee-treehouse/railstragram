@@ -1,3 +1,7 @@
-      <%=render "story/stories_list"%>
-<%=render "posts/post", post:current_user.posts.first%>
-<%=render "suggestion/suggestions_list"%>
+<div class="d-flex my-4 justify-content-center gap-3">
+  <div>
+    <%=render "story/stories_list"%>
+    <%=render "posts/post", post:current_user.posts.first%>
+  </div>
+  <%=render "suggestion/suggestions_list"%>
+</div>
