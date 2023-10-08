@@ -10,3 +10,5 @@ pin "bootstrap", to: "https://ga.jspm.io/npm:bootstrap@5.3.2/dist/js/bootstrap.e
 # in case of problems resolving this library, change ga.jspm.io to unpkg.com
 pin "@popperjs/core", to: "https://ga.jspm.io/npm:@popperjs/core@2.11.8/lib/index.js"
 pin "filepond", to: "https://ga.jspm.io/npm:filepond@4.30.4/dist/filepond.js"
+
+pin_all_from "app/javascript/custom", under: "custom"
