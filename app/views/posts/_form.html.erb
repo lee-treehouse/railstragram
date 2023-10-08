@@ -33,12 +33,22 @@
               <%= form.text_area :caption, rows:8, placeholder: "Write a caption...", class:"form-control border-0", style:"resize:none;" %>
             </div>
             <div>
-              <%= form.label :allow_comments, style: "display: block" %>
-              <%= form.check_box :allow_comments %>
+              <%= form.text_field :location, placeHolder: "Enter location...", class:"form-control border-0"%>
             </div>
-            <div>
-              <%= form.label :show_likes_count, style: "display: block" %>
-              <%= form.check_box :show_likes_count %>
+            <a class="" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Advanced Settings            
+            </a>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                <div class="form-check form-switch">
+                  <%= form.label :allow_comments, class:"form-check-label"  %>
+                  <%= form.check_box :allow_comments, class:"form-check-input", role: "switch", style:"" %>
+                </div>
+                <div class="form-check form-switch">
+                  <%= form.label :show_likes_count, class:"form-check-label"%>
+                  <%= form.check_box :show_likes_count, class:"form-check-input", role: "switch" %>
+                </div>
+              </div>
             </div>
           </div>
           <div>
