@@ -17,11 +17,9 @@
           <i class="fa-solid fa-house fa-xl"></i>
         <% end %>
         <i class="fa-brands fa-facebook-messenger fa-xl"></i>
-        <%=link_to new_post_path, class: "text-dark" do %>
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-            <i class="fa-regular fa-square-plus fa-xl"></i>
-          </button>
-        <% end %>
+        <button type="button" class="text-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          <i class="fa-regular fa-square-plus fa-xl"></i>
+        </button>
         <i class="fa-regular fa-compass fa-xl"></i>
         <i class="fa-regular fa-heart fa-xl"></i>
         <div class="dropdown">
@@ -42,3 +40,4 @@
     </div>
   </div>
 </nav>
+<%=render "posts/form", post:Post.new%>
