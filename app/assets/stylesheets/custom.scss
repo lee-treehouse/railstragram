@@ -53,3 +53,12 @@ body {
 .card::-webkit-scrollbar {
   width: 0;
 }
+
+// https://pqina.nl/filepond/docs/api/style/#grid-layout
+.filepond--item {
+  width: calc(50% - 0.5em);
+}
+
+.filepond--root {
+  max-height: 20em;
+}
