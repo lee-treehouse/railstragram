@@ -5,4 +5,5 @@ class Post < ApplicationRecord
   validates :images, presence: true
 
   has_many :likes
+  has_many :likers, through: :likes, source: :user
 end
