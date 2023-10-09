@@ -1,8 +1,10 @@
 import * as FilePond from "filepond";
 import FilePondPluginImagePreview from "filepond-plugin-image-preview";
+import FilePondPluginFileValidateType from "filepond-plugin-file-validate-type";
 
 // Register the plugin
 FilePond.registerPlugin(FilePondPluginImagePreview);
+FilePond.registerPlugin(FilePondPluginFileValidateType);
 
 // Get a reference to the file input element
 const inputElement = document.querySelector("#post-images");
