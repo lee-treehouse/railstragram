@@ -12,3 +12,6 @@ Style:
 
 Layout:
   Enabled: false
+
+Metrics:
+  Enabled: false
