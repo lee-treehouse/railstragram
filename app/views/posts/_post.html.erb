@@ -58,3 +58,8 @@
           <a class="text-primary fw-bold" style="text-decoration:none">Post</a>
         </div>
       </div>
+      <script>
+        document.getElementById("carousel<%=post.id%>").addEventListener("dblclick",function(){
+        document.getElementById("post<%=post.id%>actions-likeBtn").click();
+        })
+      </script>
