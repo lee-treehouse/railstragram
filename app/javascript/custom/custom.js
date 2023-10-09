@@ -16,4 +16,5 @@ const pond = FilePond.create(inputElement, {
   allowMultiple: true,
   allowReorder: true,
   acceptedFileTypes: ["image/*"],
+  required: true,
 });
