@@ -1,4 +1,4 @@
-class CommentController < ApplicationController
+class CommentsController < ApplicationController
 before_action :set_post, only: [:create]
 
 def create
