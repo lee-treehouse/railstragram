@@ -6,19 +6,30 @@ def create
     
     respond_to do |format|
         format.turbo_stream do
-            render turbo_stream: turbo_stream.replace("post#{@post.id}comments",
+          render turbo_stream: turbo_stream.replace(
+            "post#{@post.id}comments",
             partial: "posts/post_comments",
-            locals: {post: @post})
+            locals: {post: @post}
+          )
         end
-    end
+      end
 end
 
-def destroy 
+def destroy
     @comment = Comment.find(params[:id])
-    if (@comment.user == current_user)
-        @commend.destroy
+    if(@comment.user == current_user)
+      @comment.destroy
+
+      respond_to do |format|
+        format.turbo_stream do
+          render turbo_stream: turbo_stream.remove(
+            "post#{@comment.post_id}ModalComment#{@comment.id}"
+          )
+        end
+      end
     end
-end
+  end
+
 
 private
 def set_post
