@@ -3,6 +3,8 @@ class LikesController < ApplicationController
     before_action :set_post
     
     def toggle_like
+        # reminder @something means it's an instance variable
+        # @post was set in the before action
         if (@like = @post.likes.find_by(user:current_user))
             @like.destroy
         else
