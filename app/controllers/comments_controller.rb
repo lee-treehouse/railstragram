@@ -11,8 +11,6 @@ def create
             locals: {post: @post})
         end
     end
-
-
 end
 
 def destroy 

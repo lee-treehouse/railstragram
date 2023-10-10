@@ -1,5 +1,8 @@
 Section 6: 18: Add post validations - blob validatino not working
 
+23: comment replacement not working quite right nor is comment text field clearing
+
+
 same instructor has a ruby on rails docker video here
 https://www.youtube.com/watch?v=CCqEiRMxjl0
 
