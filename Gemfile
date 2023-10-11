@@ -61,8 +61,12 @@ gem 'htmlbeautifier'
 # gem "image_processing", "~> 1.2"
 
 group :development, :test do
+  # https://dev.to/adrianvalenz/setup-rspec-on-a-fresh-rails-7-project-5gp
+  gem "factory_bot_rails"
+  gem "faker"
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem "rspec-rails"
 end
 
 group :development do
