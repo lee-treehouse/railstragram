@@ -11,15 +11,6 @@ class LikesController < ApplicationController
             @post.likes.create(user:current_user)            
         end
 
-        # respond_to do |format|
-        #     format.turbo_stream do
-        #       render turbo_stream: turbo_stream.append(:messages, partial: "messages/message",
-        #         locals: { message: message })
-        #     end
-      
-        #     format.html { redirect_to messages_url }
-        #   end
-
         respond_to do |format|
             format.turbo_stream do
                 render turbo_stream: turbo_stream.replace("post#{@post.id}actions",
